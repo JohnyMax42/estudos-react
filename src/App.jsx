@@ -3,9 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Cabecalho from './componentes/Cabecalho'
-import Cartao from './components/Cartao'
 import Botao from './components/Botao'
 import TesteEstado from './components/TesteEstado'
+import Gato from './componentes/Gato'
+import Cartao from './components/Cartao'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +26,8 @@ function App() {
     <>
 
       <Cartao nome={pessoa.nome} imagem={pessoa.imagem} descricao={pessoa.descricao}></Cartao>
+
+      <Gato></Gato>
 
       <TesteEstado></TesteEstado>
 
