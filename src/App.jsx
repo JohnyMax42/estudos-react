@@ -2,11 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Cabecalho from './componentes/Cabecalho'
-import Botao from './components/Botao'
-import TesteEstado from './components/TesteEstado'
-import Gato from './componentes/Gato'
-import Cartao from './components/Cartao'
+import Cabecalho from './componentes/Cabecalho.jsx'
+import Botao from './componentes/Botao'
+import TesteEstado from './componentes/TesteEstado.jsx'
+import Gato from './componentes/Gato.jsx'
+import Cartao from './componentes/Cartao'
+import Layout from './paginas/Layout.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,9 +26,13 @@ function App() {
   return (
     <>
 
-      <Cartao nome={pessoa.nome} imagem={pessoa.imagem} descricao={pessoa.descricao}></Cartao>
+    <Layout></Layout>
 
-      <Gato></Gato>
+      {/* <Gato></Gato> */}
+
+      {/* <Cartao nome={pessoa.nome} imagem={pessoa.imagem} descricao={pessoa.descricao}></Cartao>
+
+      
 
       <TesteEstado></TesteEstado>
 
@@ -56,7 +61,7 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
+      </p> */}
     </>
   )
 }
